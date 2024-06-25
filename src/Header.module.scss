@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+  .cart-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}

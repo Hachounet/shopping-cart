@@ -1,7 +1,7 @@
 import styles from '../Header.module.scss';
 import PropTypes from 'prop-types';
 
-const Header = ({ items = 3, sum = 92 }) => {
+const Header = ({ items, sum }) => {
   console.log(items);
   return (
     <header className={styles.header}>
@@ -30,7 +30,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   items: 3,
-  sum: 72.57,
+  sum: 72,
 };
 
 export default Header;

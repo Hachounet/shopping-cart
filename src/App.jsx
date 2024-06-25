@@ -5,7 +5,10 @@ import { Outlet } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Header />
+      <Header
+        items={3}
+        sum={151}
+      />
       <Outlet />
     </>
   );

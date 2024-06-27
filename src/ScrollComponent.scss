@@ -1,0 +1,10 @@
+/* ScrollComponent.scss */
+
+.fade {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-active {
+  opacity: 0;
+}

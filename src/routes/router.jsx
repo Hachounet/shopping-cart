@@ -1,15 +1,20 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
-import Landing from '../components/Landing';
 
+import ScrollComponent from '../components/ScrollComponent';
+import Shop from '../components/Shop';
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
       {
-        path: '/landing',
-        element: <Landing />,
+        path: '/',
+        element: <ScrollComponent />,
+      },
+      {
+        path: '/shop',
+        element: <Shop />,
       },
     ],
   },

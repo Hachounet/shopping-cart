@@ -1,15 +1,32 @@
+import styles from '../Landing.module.scss';
+
 const Landing = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-      voluptatibus expedita explicabo provident quisquam minus tempore cum
-      repudiandae quidem repellat esse veniam vero ut earum, aut recusandae
-      sint? Veniam, magni?
-      <img
-        src="src/assets/1E4NWpHR.png"
-        alt="Futuristic shoes"
-      ></img>
-    </div>
+    <>
+      <div className={`${styles['grid']} ${styles['landing']}`}>
+        <p className={`${styles['flex']} ${styles['fader']}`}>
+          {' '}
+          <span>Introducing the new </span>
+          <span className={styles['bradshaw']}>XR Turbo Sneakers !</span>
+          <span>
+            Grab them now before they{"'"}re gone and{' '}
+            <span className={styles['bradshaw']}>unleash your style</span> on
+            the streets of your city!
+          </span>
+        </p>
+
+        <div
+          className={`${styles['bg-imgs']} ${styles['tilt-in-fwd-br-no-scale']}`}
+        >
+          {' '}
+          <img
+            className={`${styles['img']} ${styles['tilt-in-fwd-br']} ${styles['flip']}`}
+            src="src/assets/1E4NWpHR.png"
+            alt="Futuristic shoes"
+          ></img>
+        </div>
+      </div>
+    </>
   );
 };
 

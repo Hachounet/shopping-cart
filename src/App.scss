@@ -18,8 +18,18 @@
 #root {
   display: grid;
   grid-template-rows: 1fr 100%;
+  background-image: url(./assets/background.Svg);
+  background-size: cover;
 }
 
 .test {
   border: 1px solid blue;
+}
+
+.display-none {
+  display: none;
+}
+
+.display {
+  display: block;
 }

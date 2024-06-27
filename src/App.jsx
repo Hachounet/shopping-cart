@@ -9,6 +9,7 @@ function App() {
         items={3}
         sum={151}
       />
+
       <Outlet />
     </>
   );

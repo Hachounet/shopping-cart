@@ -17,7 +17,13 @@ const Header = ({ items = 3, sum = 151 }) => {
       <div className={`${styles.logo} longline`}>The Factory</div>
 
       <div className={styles['btn-pages']}>
-        <button className={styles['hvr-underline-from-center']}>Home</button>
+        <Link
+          className={styles['hvr-underline-from-center']}
+          to="/"
+        >
+          Home
+        </Link>
+
         <Link
           className={styles['hvr-underline-from-center']}
           to="Shop"

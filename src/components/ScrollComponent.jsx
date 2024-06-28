@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../ScrollComponent.scss';
 import Landing from '../components/Landing';
 import LandingVenom from '../components/LandingVenom';

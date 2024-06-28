@@ -56,14 +56,33 @@
 .header {
   font-family: 'Longline';
   font-weight: 900;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   backdrop-filter: invert(10%);
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:focus {
+      text-decoration: none;
+      color: black;
+    }
+  }
 
   .logo {
     justify-self: flex-start;
@@ -139,5 +158,21 @@
       background-color: inherit;
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 751px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

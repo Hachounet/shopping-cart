@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Longline';
-  src: url('./assets/Longline\ Regular\ Demo.ttf') format('ttf');
+  src: src('./assets/Longline\ Regular\ Demo.ttf') format('ttf');
 }
 
 .longline {
@@ -60,9 +60,14 @@
   padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  backdrop-filter: invert(10%);
+  margin-bottom: 2rem;
 
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(10%);
+  background-color: rgba(17, 25, 40, 0.144);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
   a {
     text-decoration: none;

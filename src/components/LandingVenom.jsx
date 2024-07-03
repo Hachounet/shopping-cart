@@ -5,7 +5,7 @@ const LandingVenom = () => {
     <>
       <div className={`${styles['grid']} ${styles['landing']}`}>
         <div
-          className={`${styles['bg-imgs-2']} ${styles['tilt-in-fwd-bl-no-scale']}`}
+          className={`${styles['bg-imgs-2']} ${styles['tilt-in-fwd-bl-no-scale']} ${styles['push-down']}`}
         >
           <img
             className={`${styles['img']} ${styles['tilt-in-fwd-bl']} `}
@@ -14,7 +14,7 @@ const LandingVenom = () => {
           ></img>
         </div>
 
-        <p>
+        <p className={`${styles['push-up']}`}>
           <span>Or discover our new</span>
           <br></br>
           <span className={styles['cyberfall']}>Venom XT</span>

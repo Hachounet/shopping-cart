@@ -14,7 +14,6 @@ const Header = ({ items = 3, sum = 151 }) => {
   }
 
   const location = useLocation();
-  console.log(location);
 
   const [displayCart, setDisplayCart] = useState(false);
 
@@ -32,6 +31,7 @@ const Header = ({ items = 3, sum = 151 }) => {
 
       <div className={styles['btn-pages']}>
         <Link
+          aria-label="Home button"
           className={styles['hvr-underline-from-center']}
           to="/"
         >
@@ -39,6 +39,7 @@ const Header = ({ items = 3, sum = 151 }) => {
         </Link>
 
         <Link
+          aria-label="Shop button"
           className={styles['hvr-underline-from-center']}
           to="Shop"
         >
@@ -51,7 +52,7 @@ const Header = ({ items = 3, sum = 151 }) => {
           onMouseEnter={displayCheckout}
           onMouseLeave={displayCheckout}
         >
-          <p>{items} items,</p>
+          <p aria-label="numbers of items">{items} items,</p>
           <p>{sum} $</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

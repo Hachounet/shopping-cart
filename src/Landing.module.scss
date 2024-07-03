@@ -219,20 +219,43 @@ img {
 // MEDIA QUERIES RESPONSIVE
 
 @media (max-width: 768px) {
+  img {
+    min-width: 100%;
+    max-width: 100%;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
 
+  .landing {
+    padding: 0;
+  }
+
   .landing p {
+    font-size: 7.5vw;
     grid-column: 1;
     justify-self: center;
     align-self: center;
-    padding: 2rem 2rem;
   }
 
   .landing .img {
     grid-column: 1;
     justify-self: center;
+  }
+
+  .bg-imgs {
+    position: relative;
+    top: -100px;
+  }
+
+  .push-down {
+    position: relative;
+    top: 100px;
+  }
+
+  .push-up {
+    position: relative;
+    top: -100px;
   }
 }

@@ -4,26 +4,11 @@
   box-sizing: border-box;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.noto-serif {
-  font-family: 'Noto Serif', serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-}
-
 #root {
   display: grid;
   grid-template-rows: 1fr 100%;
-  background-image: url(./assets/background.Svg);
+  background-image: url(src/assets/rando2.svg);
   background-size: cover;
-}
-
-.test {
-  border: 1px solid blue;
 }
 
 .display-none {

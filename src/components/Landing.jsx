@@ -7,7 +7,12 @@ const Landing = () => {
         <p className={`${styles['flex']} ${styles['fader']}`}>
           {' '}
           <span>Introducing the new </span>
-          <span className={styles['bradshaw']}>XR Turbo Sneakers !</span>
+          <span
+            aria-label="product-descr1"
+            className={styles['bradshaw']}
+          >
+            XR Turbo Sneakers !
+          </span>
           <span>
             Grab them now before they{"'"}re gone and{' '}
             <span className={styles['bradshaw']}>unleash your style</span> on

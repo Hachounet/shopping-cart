@@ -15,6 +15,16 @@ const Header = ({ items = 3, sum = 151 }) => {
 
   const location = useLocation();
 
+  const [dynamicHeight, setDynamicHeight] = useState('');
+
+  useEffect(() => {
+    const height =
+      location.pathname === '/Shop'
+        ? styles['shop-height']
+        : styles['home-height'];
+    setDynamicHeight(height);
+  }, [location.pathname]);
+
   const [displayCart, setDisplayCart] = useState(false);
 
   useEffect(() => {
@@ -26,7 +36,7 @@ const Header = ({ items = 3, sum = 151 }) => {
   }, [location.pathname]);
 
   return (
-    <header className={`${styles.header} longline`}>
+    <header className={`${styles.header} longline ${dynamicHeight}`}>
       <div className={`${styles.logo} longline`}>The Factory</div>
 
       <div className={styles['btn-pages']}>

@@ -58,6 +58,22 @@
   transition: all 1s ease-in-out;
 }
 
+.home-height {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 11vh;
+}
+
+.shop-height {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 15vh;
+}
+
 .header {
   font-family: 'Longline';
   font-weight: 900;

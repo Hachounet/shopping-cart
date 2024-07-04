@@ -15,11 +15,11 @@ function App() {
 
   return (
     <>
+      {' '}
       <Header
         items={items}
         sum={totalPrice}
       />
-
       <Outlet context={{ addItemToCart }} />
     </>
   );

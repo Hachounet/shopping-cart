@@ -9,7 +9,7 @@ const LandingVenom = () => {
         >
           <img
             className={`${styles['img']} ${styles['tilt-in-fwd-bl']} `}
-            src="src/assets/ja0GU8Il.png"
+            src="/assets/ja0GU8Il.png"
             alt="Futuristic Jordan shoes"
           ></img>
         </div>

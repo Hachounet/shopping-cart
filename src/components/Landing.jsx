@@ -26,7 +26,7 @@ const Landing = () => {
           {' '}
           <img
             className={`${styles['img']} ${styles['tilt-in-fwd-br']} ${styles['flip']}`}
-            src="src/assets/pTkrTmPD.png"
+            src="public/assets/1E4NWpHR.png"
             alt="Futuristic shoes"
           ></img>
         </div>

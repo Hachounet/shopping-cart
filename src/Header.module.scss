@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Longline';
   src: src('./assets/Longline\ Regular\ Demo.ttf') format('ttf');
@@ -14,7 +20,6 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  overflow: hidden;
 }
 .hvr-underline-from-center:before {
   content: '';
@@ -57,10 +62,8 @@
   font-family: 'Longline';
   font-weight: 900;
 
-  padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 2rem;
 
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(10%);
@@ -179,5 +182,6 @@
   .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-height: 5vh;
   }
 }

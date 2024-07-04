@@ -6,9 +6,10 @@
 
 #root {
   display: grid;
-  grid-template-rows: 1fr 100%;
   background-image: url(src/assets/rando2.svg);
   background-size: cover;
+  min-height: 100vh;
+  grid-template-rows: 5vh 1fr;
 }
 
 .display-none {
@@ -17,4 +18,10 @@
 
 .display {
   display: block;
+}
+
+@media (max-width: 751px) {
+  #root {
+    grid-template-rows: 15vh 1fr;
+  }
 }

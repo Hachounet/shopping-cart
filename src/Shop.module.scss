@@ -30,7 +30,6 @@
   display: grid;
 
   grid-auto-rows: auto;
-  gap: 1rem;
 }
 
 .grid-col-4 {
@@ -42,6 +41,7 @@
 }
 
 .shop-container {
+  padding-top: 1rem;
   ul {
     width: 250px;
     align-self: center;
@@ -186,11 +186,5 @@
 @media (max-width: 750px) {
   .shop-container {
     height: fit-content;
-  }
-}
-
-@media (min-width: 1140px) {
-  .shop-container {
-    height: 100dvh;
   }
 }

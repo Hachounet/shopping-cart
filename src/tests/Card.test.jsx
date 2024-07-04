@@ -127,7 +127,7 @@ describe('Card component test', () => {
     await act(async () => {
       await userEvent.click(spinbutton);
       expect(spinbutton).toHaveFocus();
-      await userEvent.keyboard('[ArrowUp]');
+      await userEvent.type(spinbutton, '{ArrowUp}');
       await userEvent.keyboard('[ArrowUp]');
     });
 

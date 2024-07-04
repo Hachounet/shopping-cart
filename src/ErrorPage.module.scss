@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.ali-items-center {
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+}
